@@ -154,6 +154,11 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoPostOrden.Text = ""; 
             miArbol.PostOrden(miRaiz);
             lblRecorridoPostOrden.Text = miArbol.strRecorrido;
+
+            lblNibel.Text = "";
+            miArbol.recorridoNiveles();
+            lblNibel.Text = miArbol.strRecorrido;
+
         }
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
@@ -223,6 +228,126 @@ namespace EDDemo.Estructuras_No_Lineales
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            miArbol.podaArrrrrr(ref miRaiz );
+            txtArbol.Text = "";
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            String Datio = txtDato.Text;
+            if (miArbol.BoleanoBusqueda(int.Parse(txtDato.Text), miRaiz))
+            {
+                miArbol.EliminarPredecesor(int.Parse(txtDato.Text),ref miRaiz);
+                lbLInfo.Text = "El dato ha sido eliminado ";
+                txtArbol.Text = "";
+                miArbol.MuestraArbolAcostado(1, miRaiz);
+                txtArbol.Text = "";
+                txtArbol.Text = miArbol.strArbol;
+                txtDato.Text = "";
+
+
+            }
+            else
+                labelBuscar.Text = "El " + Datio + " NO se encuentra en el árbol";
+            
+                
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            String Datio = txtDato.Text;
+            if (miArbol.BoleanoBusqueda(int.Parse(txtDato.Text), miRaiz))
+            {
+                miArbol.EliminarSucesor(int.Parse(txtDato.Text),ref miRaiz);
+                lbLInfo.Text = "El dato ha sido eliminado ";
+                txtArbol.Text = "";
+                miArbol.MuestraArbolAcostado(1, miRaiz);
+                txtArbol.Text = "";
+                txtArbol.Text = miArbol.strArbol;
+                txtDato.Text = "";
+
+            }
+            else
+                labelBuscar.Text = "El " + Datio + " NO se encuentra en el árbol";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            int alto = miArbol.Altura(miRaiz);
+            lbLInfo.Text = "La altura del arbol es de: " + alto;
+        } 
+        
+
+        private void txtArbol_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            int hoja = miArbol.ContarHojas(miRaiz);
+            lbLInfo.Text = "El numero de hojas es de: " + hoja;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            bool resultado = miArbol.EsLleno(miRaiz);
+            lbLInfo.Text = resultado ? "El árbol está lleno" : "El árbol no está lleno";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            bool resultado = miArbol.EsCompleto(miRaiz);
+            lbLInfo.Text = resultado ? "El árbol está completo" : "El árbol no está completo";
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            int hoja = miArbol.ContarNodos(miRaiz);
+            lbLInfo.Text = "El numero de nodps es de: " + hoja;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            miArbol.podaArbol();
+            txtArbol.Text = "";
+            lblRecorridoPreOrden.Text = "";
+            lblRecorridoInOrden.Text = "";
+            lblRecorridoPostOrden.Text = "";
+        }
+
+        private void lblPreOrden_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNodos_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }
