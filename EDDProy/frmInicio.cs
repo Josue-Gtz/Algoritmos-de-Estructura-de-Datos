@@ -46,5 +46,10 @@ namespace EDDemo
             mArboles.MdiParent = this;
             mArboles.Show();
         }
+
+        private void factorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form
+        }
     }
 }
