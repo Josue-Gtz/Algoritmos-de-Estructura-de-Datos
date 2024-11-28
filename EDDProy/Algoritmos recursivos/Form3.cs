@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using EDDemo.Algoritmos_recursivos.Clases;
 namespace Algoritmos
 {
     public partial class Form3 : Form
@@ -46,17 +46,6 @@ namespace Algoritmos
             //Escribe la variable de la funcion
             MessageBox.Show("Factorial: " + factorial + "\n Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms"+" Operaciones:");
         }      
-        private int Calcularactorial(int n)
-        {
-            int operaciones = 0;
-            //Si n es 0 o 1, devuelve 1
-            if (n == 0 || n == 1)
-            {
-                return 1;
-            }
-            //Para el valor de n mayor que 1, la función devuelve n * CalcularFactorial(n - 1)
-            return n * Calcularactorial(n - 1);
-            operaciones++;
-        }
+        
     }
 }

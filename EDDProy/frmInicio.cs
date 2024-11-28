@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Estructuras_Lineales.Clases;
+using EDDemo.Algoritmos_recursivos;
+
+//C: \Users\jgcbe\OneDrive\Documentos\EDDProy-master\EDDProy\Algoritmos recursivos\
+//C:\Users\jgcbe\OneDrive\Documentos\EDDProy-master\EDDProy\Estructuras Lineales\
+//using ED
 
 namespace EDDemo
 {
@@ -49,7 +55,7 @@ namespace EDDemo
 
         private void factorialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form
+            //Form
         }
     }
 }

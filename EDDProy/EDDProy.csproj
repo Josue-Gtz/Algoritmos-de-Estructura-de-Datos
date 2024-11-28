@@ -74,6 +74,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algoritmos recursivos\Clases\Busqueda binaria.cs" />
+    <Compile Include="Algoritmos recursivos\Clases\Exponente.cs" />
+    <Compile Include="Algoritmos recursivos\Clases\Factorial.cs" />
+    <Compile Include="Algoritmos recursivos\Clases\Fibonacci.cs" />
+    <Compile Include="Algoritmos recursivos\Clases\Hanoi.cs" />
+    <Compile Include="Algoritmos recursivos\Clases\Suma arreglo.cs" />
     <Compile Include="Algoritmos recursivos\Form3.cs">
       <SubType>Form</SubType>
     </Compile>
