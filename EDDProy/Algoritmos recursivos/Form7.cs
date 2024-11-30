@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Algoritmos_recursivos.Clases;
 
 namespace Algoritmos
 {
@@ -20,6 +21,7 @@ namespace Algoritmos
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Busqueda_binaria busq = new Busqueda_binaria(); 
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             //Define el arreglo
@@ -27,7 +29,7 @@ namespace Algoritmos
             //Es el valor que buscas
             int valorBus = 8;
             //Convierte en una variable la funcion
-            int resultado = BusquedaBinaria(arreglo, valorBus, 0, arreglo.Length - 1);
+            int resultado = busq.BusquedaBinaria(arreglo, valorBus, 0, arreglo.Length - 1);
             //Si el resultado es diferente a uno lo escribe, Sino escribe que no se encontro
             if (resultado != -1)
             {
@@ -40,26 +42,11 @@ namespace Algoritmos
                 MessageBox.Show("Elemento no encontrado en el arreglo." + "\n Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms");
             }
         }
-        static int BusquedaBinaria(int[] arreglo, int valorBuscado, int inicio, int fin)
+        
+
+        private void Form7_Load(object sender, EventArgs e)
         {
-            // Si el rango de búsqueda ya no es válido
-            if (inicio > fin)
-                return -1;
 
-            // Encunetrael punto medio
-            int medio = inicio + (fin - inicio) / 2;
-
-            // Si el valor está en el medio regresa la funcion
-            if (arreglo[medio] == valorBuscado)
-                return medio;
-
-            // Si el valor buscado es menor, buscar en la mitad izquierda
-            if (valorBuscado < arreglo[medio])
-                return BusquedaBinaria(arreglo, valorBuscado, inicio, medio - 1);
-
-            // Si el valor buscado es mayor, buscar en la mitad derecha
-            return BusquedaBinaria(arreglo, valorBuscado, medio + 1, fin);
         }
-
     }
 }

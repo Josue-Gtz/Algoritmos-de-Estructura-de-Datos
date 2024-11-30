@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Algoritmos_recursivos.Clases;
 
 namespace Algoritmos
 {
@@ -20,26 +21,21 @@ namespace Algoritmos
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Fibonacci fibo = new Fibonacci();
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             //lee el numero del textbox y lo convierte a una variable
             int num = int.Parse(textBox1.Text);
             //lee el numero resultante de la funcion y lo convierte a una variable
-            int fibonacci = Fibonacci(num);
+            int fibonacci = fibo.Fibonachi(num);
             stopwatch.Stop();
             //Escribe la variable de la funcion
             MessageBox.Show("Fibonacci: " + fibonacci+" Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms");
         }
-        static int Fibonacci(int num)
+
+        private void Form6_Load(object sender, EventArgs e)
         {
-            // Si n es 0 o 1 regresa 0,Sino regresa 1
-            if (num == 0)
-                return 0;
-            else if (num == 1)
-                return 1;
-            //En cualquier otro caso, devuelve la suma de Fibonacci(num-1) y Fibonacci(num-2)
-            else
-                return Fibonacci(num - 1) + Fibonacci(num - 2);
+
         }
     }
 }

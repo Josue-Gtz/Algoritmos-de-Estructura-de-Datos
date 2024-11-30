@@ -35,12 +35,13 @@ namespace Algoritmos
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Factorial factorial1 = new Factorial();
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             //lee el numero del textbox y lo convierte a una variable
             int numero = int.Parse(textBox1.Text);
             //lee el numero resultante de la funcion y lo convierte a una variable
-            int factorial = Calcularactorial(numero);
+            int factorial = factorial1.Calcularactorial(numero);
             //int operacion =Calcularactorial(operaciones);
             stopwatch.Stop();
             //Escribe la variable de la funcion
