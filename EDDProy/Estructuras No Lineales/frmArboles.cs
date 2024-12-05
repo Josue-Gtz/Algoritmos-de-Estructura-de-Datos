@@ -58,7 +58,7 @@ namespace EDDemo.Estructuras_No_Lineales
 
                 txtDato.Text = "";
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 if (!string.IsNullOrEmpty(txtDato.Text))
                     MessageBox.Show("Solo números");
@@ -203,7 +203,7 @@ namespace EDDemo.Estructuras_No_Lineales
                 else
                     labelBuscar.Text = "El " + Datio + " NO se encuentra en el árbol"; 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 if (!string.IsNullOrEmpty(txtDato.Text))
                     MessageBox.Show("Solo números");

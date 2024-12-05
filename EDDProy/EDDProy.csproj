@@ -80,6 +80,12 @@
     <Compile Include="Algoritmos recursivos\Clases\Fibonacci.cs" />
     <Compile Include="Algoritmos recursivos\Clases\Hanoi.cs" />
     <Compile Include="Algoritmos recursivos\Clases\Suma arreglo.cs" />
+    <Compile Include="Estructuras Lineales\Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
     <Compile Include="Algoritmos recursivos\Form3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,8 +127,38 @@
     <Compile Include="Estructuras Lineales\Clases\ListasCirculares.cs" />
     <Compile Include="Estructuras Lineales\Clases\ListasCirDob.cs" />
     <Compile Include="Estructuras Lineales\Clases\ListasDobles.cs" />
-    <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
+    <Compile Include="Estructuras Lineales\Clases\NodoL.cs" />
     <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
+    <Compile Include="Estructuras Lineales\Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form13.Designer.cs">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form14.Designer.cs">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Form15.Designer.cs">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
       <SubType>Form</SubType>
@@ -143,15 +179,18 @@
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.cs">
+    <Compile Include="Graphviz.cs" />
+    <Compile Include="Ordenamiento\FormOrdBus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.Designer.cs">
-      <DependentUpon>frmPilas.cs</DependentUpon>
+    <Compile Include="Ordenamiento\FormOrdBus.Designer.cs">
+      <DependentUpon>FormOrdBus.cs</DependentUpon>
     </Compile>
-    <Compile Include="Graphviz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Estructuras Lineales\Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Algoritmos recursivos\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +209,21 @@
     <EmbeddedResource Include="Algoritmos recursivos\Form8.resx">
       <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\Form13.resx">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\Form14.resx">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\Form15.resx">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,8 +233,8 @@
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
-      <DependentUpon>frmPilas.cs</DependentUpon>
+    <EmbeddedResource Include="Ordenamiento\FormOrdBus.resx">
+      <DependentUpon>FormOrdBus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -507,6 +561,9 @@
     <Content Include="external\zlib1.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ordenamiento\ClaseOR\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

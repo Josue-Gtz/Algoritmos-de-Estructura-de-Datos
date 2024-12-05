@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EDDemo.Algoritmos_recursivos.Clases
 {
-    class Factorial
+    public class Factorial
     {
         public int Calcularactorial(int n)
         {
