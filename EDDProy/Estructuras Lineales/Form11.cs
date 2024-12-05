@@ -26,7 +26,7 @@ namespace Algoritmos
         private void ActualizarListBox()
         {
             var recorrido = cola.Recorrer();
-            listBox1.Text = recorrido;
+            label2.Text = recorrido;
         }
         private void Form11_Load(object sender, EventArgs e)
         {
@@ -56,7 +56,7 @@ namespace Algoritmos
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un valor.");
+                MessageBox.Show("Ingrese un valor.");
             }
         }
 
@@ -96,7 +96,7 @@ namespace Algoritmos
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un valor para buscar.");
+                MessageBox.Show("Ingrese un valor para buscar.");
             }
             ActualizarListBox();  
         }
@@ -111,5 +111,9 @@ namespace Algoritmos
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

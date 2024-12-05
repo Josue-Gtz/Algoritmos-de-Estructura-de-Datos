@@ -80,6 +80,14 @@
     <Compile Include="Algoritmos recursivos\Clases\Fibonacci.cs" />
     <Compile Include="Algoritmos recursivos\Clases\Hanoi.cs" />
     <Compile Include="Algoritmos recursivos\Clases\Suma arreglo.cs" />
+    <Compile Include="Busqueda\Clases\BuscarBi.cs" />
+    <Compile Include="Busqueda\Clases\Hash.cs" />
+    <Compile Include="Busqueda\Haash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda\Haash.Designer.cs">
+      <DependentUpon>Haash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras Lineales\Form11.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,14 +188,24 @@
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
-    <Compile Include="Ordenamiento\FormOrdBus.cs">
+    <Compile Include="Busqueda\Binaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ordenamiento\FormOrdBus.Designer.cs">
-      <DependentUpon>FormOrdBus.cs</DependentUpon>
+    <Compile Include="Busqueda\Binaria.Designer.cs">
+      <DependentUpon>Binaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordenamiento\Clases\QuickSort.cs" />
+    <Compile Include="Ordenamiento\Quicksort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordenamiento\Quicksort.Designer.cs">
+      <DependentUpon>Quicksort.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Busqueda\Haash.resx">
+      <DependentUpon>Haash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras Lineales\Form11.resx">
       <DependentUpon>Form11.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,8 +251,11 @@
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ordenamiento\FormOrdBus.resx">
-      <DependentUpon>FormOrdBus.cs</DependentUpon>
+    <EmbeddedResource Include="Busqueda\Binaria.resx">
+      <DependentUpon>Binaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordenamiento\Quicksort.resx">
+      <DependentUpon>Quicksort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -562,8 +583,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ordenamiento\ClaseOR\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

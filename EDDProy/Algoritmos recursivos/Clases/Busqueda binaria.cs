@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EDDemo.Algoritmos_recursivos.Clases
 {
-    class Busqueda_binaria
+    public class Busqueda_binaria
     {
         public int BusquedaBinaria(int[] arreglo, int valorBuscado, int inicio, int fin)
         {

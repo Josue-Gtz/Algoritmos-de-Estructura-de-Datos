@@ -84,7 +84,7 @@ namespace Algoritmos
         private void ActualizarListBox()
         {
             var recorrido = pila.Recorrer();
-            listBox1.Text = recorrido;  
+            label2.Text = recorrido;  
         }
        
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -92,7 +92,10 @@ namespace Algoritmos
 
         }
 
-       
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

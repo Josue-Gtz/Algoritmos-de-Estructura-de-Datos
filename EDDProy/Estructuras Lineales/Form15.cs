@@ -52,7 +52,7 @@ namespace Algoritmos
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un valor y una posición válida.");
+                MessageBox.Show("Ingrese un valor y una posición válida.");
             }
 
         }
@@ -92,7 +92,7 @@ namespace Algoritmos
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un valor para buscar.");
+                MessageBox.Show("Ingrese un valor para buscar.");
             }
 
         }
@@ -110,7 +110,12 @@ namespace Algoritmos
         private void ActualizarListbox()
         {
             var resultado = lisCIDO.Recorrer();
-            listBox1.Text = resultado;
+            label4.Text = resultado;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

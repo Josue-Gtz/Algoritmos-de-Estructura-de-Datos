@@ -36,7 +36,7 @@ namespace Algoritmos
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un valor y una posición válida.");
+                MessageBox.Show("Ingrese un valor y una posición válida.");
             }
           
         }
@@ -60,14 +60,14 @@ namespace Algoritmos
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un valor para buscar.");
+                MessageBox.Show("Ingrese un valor para buscar.");
             }
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string dato = textBox1.Text;
+            string dato = textBox2.Text;
             if (!string.IsNullOrEmpty(dato))
             {
                 lista.Eliminar(dato);  // Eliminar el valor
@@ -77,7 +77,7 @@ namespace Algoritmos
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un valor para eliminar.");
+                MessageBox.Show("Ingrese un valor para eliminar.");
             }
         }
 
@@ -103,9 +103,8 @@ namespace Algoritmos
 
         private void ActualizarListBox()
         {
-            listBox1.Items.Clear();
             var recorrido = lista.Recorrer();
-            listBox1.Text = recorrido;
+            label4.Text = recorrido;
         }
         
 
@@ -115,6 +114,11 @@ namespace Algoritmos
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
         {
 
         }

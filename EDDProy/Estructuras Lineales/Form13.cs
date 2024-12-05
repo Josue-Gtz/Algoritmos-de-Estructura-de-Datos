@@ -26,7 +26,7 @@ namespace Algoritmos
         private void ActualizarLista()
         {
             var resultado = lista.RecorrerAdelante();
-            listBox1.Text = resultado;  // Mostrar la lista en el TextBox
+            label4.Text = resultado;  // Mostrar la lista en el TextBox
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -99,6 +99,11 @@ namespace Algoritmos
             }
             ActualizarLista();
             MessageBox.Show("Lista limpiada");
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

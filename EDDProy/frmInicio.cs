@@ -12,6 +12,10 @@ using EDDemo.Estructuras_Lineales.Clases;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Algoritmos_recursivos;
 using Algoritmos;
+using EDDemo.Ordenamiento.Clases;
+using System.Security.Policy;
+using EDDemo.Ordenamiento;
+using EDDemo.Busqueda;
 
 //C: \Users\jgcbe\OneDrive\Documentos\EDDProy-master\EDDProy\Algoritmos recursivos\
 //C:\Users\jgcbe\OneDrive\Documentos\EDDProy-master\EDDProy\Estructuras Lineales\
@@ -135,6 +139,27 @@ namespace EDDemo
             Form8 mHanoi = new Form8();
             mHanoi.MdiParent = this;
             mHanoi.Show();
+        }
+
+        private void quickSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Quicksort mquic = new Quicksort();
+            mquic.MdiParent = this;
+            mquic.Show();
+        }
+
+        private void binariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Binaria mbin = new Binaria();
+            mbin.MdiParent = this;
+            mbin.Show();
+        }
+
+        private void hashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Haash mash = new Haash();
+            mash.MdiParent = this;
+            mash.Show();
         }
     }
 }
