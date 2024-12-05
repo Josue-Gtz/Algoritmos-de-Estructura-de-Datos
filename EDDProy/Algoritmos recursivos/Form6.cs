@@ -25,12 +25,12 @@ namespace Algoritmos
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             //lee el numero del textbox y lo convierte a una variable
-            int num = int.Parse(textBox1.Text);
+            long num = long.Parse(textBox1.Text);
             //lee el numero resultante de la funcion y lo convierte a una variable
-            int fibonacci = fibo.Fibonachi(num);
+            long fibonacci = fibo.Fibonachi(num);
             stopwatch.Stop();
             //Escribe la variable de la funcion
-            MessageBox.Show("Fibonacci: " + fibonacci+" Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms");
+            MessageBox.Show("Fibonacci: " + fibonacci+" Tiempo de ejecucion" + stopwatch.Elapsed.TotalMilliseconds + "ms");
         }
 
         private void Form6_Load(object sender, EventArgs e)

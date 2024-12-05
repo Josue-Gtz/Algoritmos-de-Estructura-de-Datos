@@ -45,13 +45,10 @@ namespace EDDemo.Busqueda
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Se obtiene el input
             string input = textBox1.Text;
             
-            // Se genera un hash mediante la funcion hash polinomial
-            int claveHash = ash.FuncionHashPolinomial(input, 100);  // Usamos el tamaño de tabla 100
+            int claveHash = ash.FuncionHashPolinomial(input, 100);  
 
-            // Se inserta el valor en la tabla hash
             ash.Insertar(input);
 
             richTextBox1.AppendText($"Clave: {claveHash}\r\nElemento: {input}\r\n\r\n");
@@ -71,13 +68,10 @@ namespace EDDemo.Busqueda
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
-            // Se verifica si el valor de la búsqueda (clave) es numérico
             if (int.TryParse(textBox1.Text, out int claveBuscada))
             {
-                // Se busca el valor asociado a la clave en la tabla hash
                 string resultado = ash.Buscar(claveBuscada);
 
-                // Se muestra el resultado de la búsqueda en txtEncontrado
                 if (resultado != null)
                 {
                     textBox3.Text = $"Elemento: {resultado}";

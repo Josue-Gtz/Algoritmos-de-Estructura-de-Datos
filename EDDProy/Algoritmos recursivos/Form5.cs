@@ -30,7 +30,7 @@ namespace Algoritmos
             int suma = sumaR.SumarN(arreglo, arreglo.Length - 1);
             stopwatch.Stop();
             //Escribe la variable de la funcion
-            MessageBox.Show("La suma de los numeros del arreglo es: " + suma + "\n Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms");
+            MessageBox.Show("La suma de los numeros del arreglo es: " + suma + "\n Tiempo de ejecucion" + stopwatch.Elapsed.TotalMilliseconds + "ms");
         }
         
 

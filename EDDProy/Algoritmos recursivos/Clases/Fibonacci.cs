@@ -8,7 +8,7 @@ namespace EDDemo.Algoritmos_recursivos.Clases
 {
     class Fibonacci
     {
-        public int Fibonachi(int num)
+        public long Fibonachi(long num)
         {
             // Si n es 0 o 1 regresa 0,Sino regresa 1
             if (num == 0)

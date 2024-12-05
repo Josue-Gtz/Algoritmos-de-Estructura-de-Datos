@@ -29,7 +29,7 @@ namespace Algoritmos
                                                    //Plantea las torres
             hanoi.TorreDeHanoi(numDis, 'A', 'C', 'B'); // A: origen, C: destino, B: auxiliar
             stopwatch.Stop();
-            MessageBox.Show("\n Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms");
+            MessageBox.Show("\n Tiempo de ejecucion" + stopwatch.Elapsed.TotalMilliseconds + "ms");
         }
         
 

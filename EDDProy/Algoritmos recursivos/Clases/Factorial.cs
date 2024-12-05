@@ -8,7 +8,7 @@ namespace EDDemo.Algoritmos_recursivos.Clases
 {
     public class Factorial
     {
-        public int Calcularactorial(int n)
+        public long Calcularactorial(long n)
         {
             int operaciones = 0;
             //Si n es 0 o 1, devuelve 1

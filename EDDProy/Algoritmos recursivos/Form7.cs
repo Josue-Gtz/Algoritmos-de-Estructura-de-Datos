@@ -34,12 +34,12 @@ namespace Algoritmos
             if (resultado != -1)
             {
                 stopwatch.Stop();
-                MessageBox.Show("Elemento encontrado en el índice: " + resultado + "\n Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms");
+                MessageBox.Show("Elemento encontrado en el índice: " + resultado + "\n Tiempo de ejecucion" + stopwatch.Elapsed.TotalMilliseconds + "ms");
             }
             else
             {
                 stopwatch.Stop();
-                MessageBox.Show("Elemento no encontrado en el arreglo." + "\n Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms");
+                MessageBox.Show("Elemento no encontrado en el arreglo." + "\n Tiempo de ejecucion" + stopwatch.Elapsed.TotalMilliseconds + "ms");
             }
         }
         

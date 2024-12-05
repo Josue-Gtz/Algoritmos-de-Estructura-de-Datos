@@ -29,15 +29,15 @@ namespace Algoritmos
             
             Exponente exponente1 = new Exponente();
             //lee el numero del textbox y lo convierte a una variable
-            int baseN = int.Parse(textBox1.Text);
-            int exponente = int.Parse(textBox2.Text);
+            long baseN = long.Parse(textBox1.Text);
+            long exponente = long.Parse(textBox2.Text);
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
             //lee el numero resultante de la funcion y lo convierte a una variable
-            int potencia = exponente1.Potencia(baseN,exponente);
+            long potencia = exponente1.Potencia(baseN,exponente);
             stopwatch.Stop();
             //Escribe la variable de la funcion
-            MessageBox.Show("Potencia: " + potencia + "\n Tiempo de ejecucion" + stopwatch.ElapsedMilliseconds + "ms");
+            MessageBox.Show("Potencia: " + potencia + "\n Tiempo de ejecucion" + stopwatch.Elapsed.TotalMilliseconds + "ms");
         }
         
     }

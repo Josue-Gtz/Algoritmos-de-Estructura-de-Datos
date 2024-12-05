@@ -8,7 +8,7 @@ namespace EDDemo.Algoritmos_recursivos.Clases
 {
     class Exponente
     {
-        public int Potencia(int baseN, int exponente)
+        public long Potencia(long baseN, long exponente)
         {
             //Si el exponente es igual a 0 regreasa 1
             if (exponente == 0)
